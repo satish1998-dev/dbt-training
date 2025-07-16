@@ -4,4 +4,4 @@
     )
 }}
 
-select * from raw.global_mart.products
+select * from {{ source('snowflakeraw','products')}}
