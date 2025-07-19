@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: snowflakeraw
+    database: raw
+    schema: global_mart
+    tables:
+      - name: orders
+        columns:
+          - name: orderid
+            tests:
+              - not_null
+              - unique
+      - name: products
+      - name: customers

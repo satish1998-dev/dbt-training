@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: this table is about orders
+    columns:
+      - name: orderid
+        description: it is unique value
+      - name: shipmode
+        description: '{{ doc("shipmode")}}'
