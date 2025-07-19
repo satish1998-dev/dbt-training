@@ -5,7 +5,7 @@
 }}
 
 select 
-    {{ dbt_utils.generate_surrogate_key(['o.orderid','c.customerid','p.productid'])}},
+    {{ dbt_utils.generate_surrogate_key(['o.orderid','c.customerid','p.productid'])}} as common_key,
     o.orderid,
     o.orderdate,
     o.shipdate,
